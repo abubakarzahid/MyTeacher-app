@@ -1,79 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MyTeacher-app</string>
-    <string-array name="teachersnames">
-        <item>Sir-AbdulWahab</item>
-        <item>Dr.Arshad</item>
-        <item>Dr.Atif</item>
-        <item>Dr.Ibrar</item>
-        <item>Sir-Abid Bashir</item>
-        <item>Sir- Adnan Hashmi</item>
-        <item>sir-Atifikram</item>
-        <item>Dr-Salman</item>
-        <item>Sir-Naveed Ahmad</item>
-        <item>Sir-Sarmad Ali</item>
-        <item>Sir-Shahid Yousaf</item>
-        <item>Sir-Yasir Mahmood</item>
-        <item>Sir-Hassan Qureshi</item>
-        <item>Sir-Khurram Shahzad </item>
-        <item>Sir-Khurram Bajwa </item>
-        <item>Mam-Sobia bashir</item>
-        <item>Mam-Afifa</item>
-        <item>Mam-Beenish</item>
-        <item>Mam-Farah</item>
-        <item>Mam-Nadia</item>
-        <item>Mam-Sadia</item>
-        <item>Mam-Umbreen</item>
-        <item>Sir-Asadullah</item>
-        <item>Sir-Khawaja Ali Qadeer </item>
-        <item>Sir-David</item>
-        <item>Sir-Irtiza</item>
-        <item>Sir-Nouman Saleem</item>
-        <item>Sir-Usman Javed </item>
-        <item>Sir-Waqar Ali </item>
-        <item>Sir-Sajidullah </item>
-        <item>Sir-Roa Umer </item>
-        <item>Sir-Rana Zeeshan </item>
-        <item>Sir-Yasir Naeem </item>
-        <item>Sir-Rana Sami </item>
-        <item>Sir-Nouman </item>
+    <string name="app_name" />
+    
+    <string-array name="teachernames">
+        <item>Sir Abdul Wahab</item>
+        <item>Sir Nouman Saleem</item>
+        <item>Sir Roa Umer</item>
+        <item>Sir Asadullah</item>
+        <item>Sir Rana Sami</item>
+        <item>Sir Rana Zeeshan</item>
+        <item>Sir Nouman</item>
+        <item>Mam Irum</item>
+        <item>Mam Affifa</item>
+        <item>Mam Sobia Bashir</item>
+        <item>Mam Sadia</item>
+        <item>Mam Farah</item>
+        <item>Mam Nida</item>
     </string-array>
-
-    <string-array name="teacher_rank">
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
-        <item>Assistant Professor</item>
+    <string-array name="teacherrank">
         <item>Assistant Professor</item>
         <item>Lecture R</item>
         <item>Lecture R</item>
         <item>Lecture R</item>
+        <item>Junior Lecture R</item>
+        <item>Junior Lecture R</item>
+        <item>Junior lceture R</item>
+        <item>junior Lecture R</item>
+        <item>Junior Lecture R</item>
+        <item>Lecture R</item>
+        <item>Assistat Professor</item>
         <item>Lecture R</item>
         <item>Lecture R</item>
         <item>Lecture R</item>
-        <item>Lecture R</item>
-        <item>Lecture R</item>
-        <item>Lecture R</item>
-        <item>Lecture R</item>
-        <item>Lecture R</item>
-        <item>Lecture R</item>
-        <item>Lecture R</item>
-        <item>Lecture R</item>
-        <item>Lecture R</item>
-        <item> Junior-Lecture R</item>
-        <item>Junior-Lecture R</item>
-        <item>Junior-Lecture R</item>
-        <item>Junior-Lecture R</item>
-
     </string-array>
 </resources>
