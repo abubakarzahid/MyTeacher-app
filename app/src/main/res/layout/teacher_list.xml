@@ -25,7 +25,8 @@
         android:layout_marginTop="17dp"
         android:layout_toEndOf="@+id/teacherimage"
         android:hint="Teacher name"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/terank"
@@ -35,7 +36,8 @@
         android:layout_alignEnd="@+id/tenames"
         android:layout_marginBottom="12dp"
         android:hint="Teacher rank"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
 
 </RelativeLayout>

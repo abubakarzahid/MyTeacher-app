@@ -13,50 +13,24 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class Listview extends AppCompatActivity {
-    public static android.widget.ListView list_view;
-    String [] tname;
-    String [] trank;
+   ListView list;
+    String [] tname = {"Sir Abdul-Wahab","Sir Nouman Saleem","Rao Umer","Sir Asadullah","Sir Rana Sami ","Rana Zeeshan ","Sir Nouman jlr",
+    "Mam Irum","Mam Affifa","Mam Sobia Bashir","Mam Sadia","Mam Farah","Mam Nida"};
+    String [] trank ={"Assistant Professor","Lecture R","Lecture R","Lecture R","Junior Lecture R","Junior lecture R","junior Lecture R",
+    "Junior Lecture R","Lecture R","Assistant Professor","Lecture R","Lecture R","Lecture R"};
     int [] images ={R.drawable.sir_abdulwahab,R.drawable.nouman_saleem,R.drawable.rao_umer,R.drawable.asadullah,R.drawable.ranasami_jlr,R.drawable.ranazeeshan_jlr,
     R.drawable.nouman_jlr,R.drawable.irum,R.drawable.affifa,R.drawable.sobiabashir,R.drawable.sadia,R.drawable.farah,R.drawable.nida};
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview);
-
-        Resources res = getResources();
-        tname = res.getStringArray(R.array.teachernames);
-        trank = res.getStringArray(R.array.teacherrank);
-        list_view = (android.widget.ListView)findViewById(R.id.teacherslist);
-        TeacherAdapter teacherAdapter = new TeacherAdapter(this,tname,trank,images);
+        list = (ListView)findViewById(R.id.teacherslist);
+        MyAdapter myAdapter = new MyAdapter(Listview.this,tname,trank,images);
+        list.setAdapter(myAdapter);
     }
+
 }
-class TeacherAdapter extends ArrayAdapter<String>{
-    Context context;
-    String[] images;
-    String [] teacherarray;
-    int[] rankarray;
-    TeacherAdapter(Context c, String [] teachernames, String[] image, int[] rank){
-        super(c,R.layout.activity_listview,R.id.tenames,teachernames);
-        this.context=c;
-        this.images = image;
-        this.teacherarray = teachernames;
-        this.rankarray=rank;
-    }
 
-    @NonNull
-    @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View row = inflater.inflate(R.layout.activity_listview,parent,false);
-        ImageView imageView = (ImageView)row.findViewById(R.id.teacherimage);
-        TextView textname = (TextView)row.findViewById(R.id.tenames);
-        TextView textrank = (TextView)row.findViewById(R.id.terank);
-        imageView.setImageResource(Integer.parseInt(images[position]));
-        textname.setText(teacherarray[position]);
-        textrank.setText(rankarray[position]);
-
-        return row;
-    }
-}
