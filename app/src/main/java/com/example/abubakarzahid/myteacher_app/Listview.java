@@ -57,6 +57,6 @@ class TeacherAdapter extends ArrayAdapter<String>{
         textname.setText(teacherarray[position]);
         textrank.setText(rankarray[position]);
 
-        return super.getView(position, convertView, parent);
+        return row;
     }
 }
