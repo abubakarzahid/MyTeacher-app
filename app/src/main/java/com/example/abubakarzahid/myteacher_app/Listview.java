@@ -41,6 +41,7 @@ public class Listview extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent mIntent = new Intent(Listview.this,Teacher_Detail.class);
                 mIntent.putExtra("TeacherImage",images[i]);
+                mIntent.putExtra("TeacherRank",trank[i]);
                 // i is our postition
                 startActivity(mIntent);
             }
