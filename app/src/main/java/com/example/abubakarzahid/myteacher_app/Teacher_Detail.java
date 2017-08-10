@@ -9,6 +9,7 @@ public class Teacher_Detail extends AppCompatActivity {
     ImageView dimage;
     TextView text;
     TextView text1;
+    TextView text2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,7 @@ public class Teacher_Detail extends AppCompatActivity {
         dimage = (ImageView)findViewById(R.id.detailimage);
         text = (TextView)findViewById(R.id.textView);
         text1 = (TextView)findViewById(R.id.textView1);
+        text2 = (TextView)findViewById(R.id.textView2);
 
 
         Bundle mBundle = getIntent().getExtras();
@@ -24,8 +26,10 @@ public class Teacher_Detail extends AppCompatActivity {
             dimage.setImageResource(mBundle.getInt("TeacherImage"));
             String message = mBundle.getString("TeacherRank");
             String message1 = mBundle.getString("TeacherName");
+            String message2 = mBundle.getString("Id&Mai");
             text.setText(message);
             text1.setText(message1);
+            text2.setText(message2);
         }
     }
 }

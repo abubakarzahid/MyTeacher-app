@@ -20,12 +20,19 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class Listview extends AppCompatActivity {
-    Toolbar tbar;
+
    ListView list;
     String [] tname = {"Sir Abdul-Wahab","Sir Nadeem","Sir Sarmad Ali","Sir Arshad","Sir Salman","Sir Khurram bajwa","Sir Yasir Mahmood","Sir Adnan","Sir Abid Bashir","Sir Atif Chatha","Sir Hammad","Sir Khurram Shahzad","Sir Ibrar","Sir Shahid Yousaf","Sir Nouman Saleem","Rao Umer","Sir Asadullah","Sir Rana Sami ","Rana Zeeshan ","Sir Nouman jlr",
     "Mam Irum","Mam Affifa","Mam Sobia Bashir","Mam Sadia","Mam Farah"};
     String [] trank ={"Assistant Professor","HOD","Assistant Professor","Assistant Professor","Assistant Professor","Assistant Professor","Assistant Professor","Assistant Professor","Assistant Professor","Assistant Professor","Assistant Professor","Assistant Professor","Assistant Professor","Assistant professor","Lecture R","Lecture R","Lecture R","Lecture R","Junior Lecture R","Junior lecture R","junior Lecture R",
     "Junior Lecture R","Lecture R","Assistant Professor","Lecture R","Lecture R","Lecture R"};
+    String [] tteaches = {"[{\n" +
+            "  \"id\": 1,\n" +
+            "  \"email\": \"abdulwahab@uol.edu.pk\"\n" +
+            "}]","[{\n" +
+            "  \"id\": 2,\n" +
+            "  \"email\": \"nadeem.uol.edu.pk\"\n" +
+            "}]"};
     int [] images ={R.drawable.sir_abdulwahab,R.drawable.nadeem,R.drawable.sarmad,R.drawable.teacher,R.drawable.salman,R.drawable.bajwa,R.drawable.yasir,R.drawable.adnan,R.drawable.abidbashir,R.drawable.atif,R.drawable.hammad,R.drawable.khurramshahzad,R.drawable.ibrar,R.drawable.shahidyousaf,R.drawable.nouman_saleem,R.drawable.rao_umer,R.drawable.asadullah,R.drawable.ranasami_jlr,R.drawable.ranazeeshan_jlr,
     R.drawable.nouman_jlr,R.drawable.irum,R.drawable.affifa,R.drawable.sobiabashir,R.drawable.sadia,R.drawable.farah};
 
@@ -47,6 +54,7 @@ public class Listview extends AppCompatActivity {
                 mIntent.putExtra("TeacherImage",images[i]);
                 mIntent.putExtra("TeacherRank",trank[i]);
                 mIntent.putExtra("TeacherName",tname[i]);
+                mIntent.putExtra("Id&Mail",tteaches[i]);
                 // i is our postition
                 startActivity(mIntent);
             }
