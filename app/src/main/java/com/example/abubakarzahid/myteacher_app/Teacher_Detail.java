@@ -26,7 +26,7 @@ public class Teacher_Detail extends AppCompatActivity {
             dimage.setImageResource(mBundle.getInt("TeacherImage"));
             String message = mBundle.getString("TeacherRank");
             String message1 = mBundle.getString("TeacherName");
-            String message2 = mBundle.getString("Id&Mai");
+            String message2 = mBundle.getString("Idandmail");
             text.setText(message);
             text1.setText(message1);
             text2.setText(message2);
