@@ -37,9 +37,13 @@ public class MyAdapter extends ArrayAdapter<String> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         ViewHolder mviewholder = new ViewHolder();
+
+        // if my existing view is reused then inflate it.....
         if (convertView == null) {
             LayoutInflater minflator = (LayoutInflater) mcontext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = minflator.inflate(R.layout.teacher_list, parent, false);
+
+            // populating my data
             mviewholder. mimage = (ImageView) convertView.findViewById(R.id.teacherimage);
             mviewholder. textname = (TextView) convertView.findViewById(R.id.tenames);
             mviewholder. textrank = (TextView) convertView.findViewById(R.id.terank);
@@ -48,9 +52,11 @@ public class MyAdapter extends ArrayAdapter<String> {
         else {
             mviewholder = (ViewHolder)convertView.getTag();
         }
+        // populating my data from data objects through viewholder object
             mviewholder.mimage.setImageResource(image[position]);
             mviewholder.textname.setText(names[position]);
             mviewholder.textrank.setText(rank[position]);
+        // returning my view to show on screen
 
         return convertView;
     }
